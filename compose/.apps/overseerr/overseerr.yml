@@ -1,0 +1,17 @@
+services:
+  overseerr:
+    container_name: overseerr
+    environment:
+      - PGID=${PGID}
+      - PUID=${PUID}
+      - LOG_LEVEL=debug
+      - TZ=${TZ}
+    logging:
+      driver: json-file
+      options:
+        max-file: ${DOCKERLOGGING_MAXFILE}
+        max-size: ${DOCKERLOGGING_MAXSIZE}
+    restart: ${READARR_RESTART}
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+      - ${DOCKERCONFDIR}/overseerr:/app/config

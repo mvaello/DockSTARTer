@@ -1,0 +1,10 @@
+services:
+  overseerr:
+    labels:
+      com.dockstarter.appinfo.deprecated: "false"
+      com.dockstarter.appinfo.description: Overseerr is a request management and media discovery tool built to work with your existing Plex ecosystem
+      com.dockstarter.appinfo.nicename: Overseerr
+      com.dockstarter.appvars.overseerr_enabled: "false"
+      com.dockstarter.appvars.overseerr_network_mode: ""
+      com.dockstarter.appvars.overseerr_port_5055: "5055"
+      com.dockstarter.appvars.overseerr_restart: unless-stopped
