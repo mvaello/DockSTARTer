@@ -1,0 +1,3 @@
+services:
+  readarr:
+    network_mode: ${READARR_NETWORK_MODE}

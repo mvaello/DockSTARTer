@@ -1,0 +1,3 @@
+services:
+  readarr:
+    image: cr.hotio.dev/hotio/readarr
